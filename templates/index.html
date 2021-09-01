@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Boostrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>You Make A Moon</title>
+
+    <!-- Custom Links -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/moon.ico') }}" type="image/x-icon" />
+  </head>
+
+  <body class="bg-dark">
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark linea">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">You Make A Moon</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#Software"
+                ><i class="bx bxl-windows"></i> Software</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                ><i class="bx bxl-discord-alt"></i> Discord Bot (Proximamente)
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                ><i class="bx bxl-android"></i> Android App (Proximamente)
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                target="_blank"
+                href="https://www.facebook.com/LaOdiseaDeLosMemes"
+                ><i class="bx bxl-facebook-circle"></i> Facebook</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                target="_blank"
+                href="https://twitter.com/LaOdiseaDLMemes"
+                ><i class="bx bxl-twitter"></i> Twitter</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Fotos -->
+    <div class="slideshow-container mt-4">
+      <div class="mySlides feda">
+        <div class="numbertext">1 / 11</div>
+        <img src="{{ url_for('static', filename='images/temples/1.jpg') }}" style="width: 100%" alt="Luna Amarilla" />
+        <div class="text">Original</div>
+      </div>
+
+      <div class="mySlides feda">
+        <div class="numbertext">2 / 11</div>
+        <img src="{{ url_for('static', filename='images/temples/2.jpg') }}" style="width: 100%" alt="Luna Azul" />
+        <div class="text">L Edition</div>
+      </div>
+
+      <div class="mySlides feda">
+        <div class="numbertext">3 / 11</div>
+        <img src="{{ url_for('static', filename='images/temples/3.jpg') }}" style="width: 100%" alt="Luna Roja" />
+        <div class="text">Red Blood</div>
+      </div>
+
+      <div class="mySlides feda">
+        <div class="numbertext">4 / 11</div>
+        <img src="{{ url_for('static', filename='images/temples/4.jpg') }}" style="width: 100%" alt="Black & White" />
+        <div class="text">Black & White</div>
+      </div>
+
+      <div class="mySlides feda">
+        <div class="numbertext">5 / 11</div>
+        <img src="{{ url_for('static', filename='images/temples/5.jpg') }}" style="width: 100%" alt="Cherry Orange" />
+        <div class="text">Cherry Orange</div>
+      </div>
+      <div class="mySlides feda">
+        <div class="numbertext">6 / 11</div>
+        <img src="{{ url_for('static', filename='images/temples/6.jpg') }}" style="width: 100%" alt="Grapes" />
+        <div class="text">Grapes</div>
+      </div>
+      <div class="mySlides feda">
+        <div class="numbertext">7 / 11</div>
+        <img src="{{ url_for('static', filename='images/temples/7.jpg') }}" style="width: 100%" alt="Sky" />
+        <div class="text">Sky</div>
+      </div>
+      <div class="mySlides feda">
+        <div class="numbertext">8 / 11</div>
+        <img src="{{ url_for('static', filename='images/temples/8.jpg') }}" style="width: 100%" alt="Old" />
+        <div class="text">Old</div>
+      </div>
+      <div class="mySlides feda">
+        <div class="numbertext">9 / 11</div>
+        <img src="{{ url_for('static', filename='images/temples/9.jpg') }}" style="width: 100%" alt="Star" />
+        <div class="text">Star</div>
+      </div>
+      <div class="mySlides feda">
+        <div class="numbertext">10 / 11</div>
+        <img src="{{ url_for('static', filename='images/temples/10.jpg') }}" style="width: 100%" alt="Cat" />
+        <div class="text">Cat</div>
+      </div>
+      <div class="mySlides feda">
+        <div class="numbertext">11 / 11</div>
+        <img src="{{ url_for('static', filename='images/temples/11.jpg') }}" style="width: 100%" alt="Multi" />
+        <div class="text">Multi</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)"><i class='bx bxs-right-arrow bx-flip-horizontal' ></i></a>
+      <a class="next" onclick="plusSlides(1)"><i class='bx bxs-right-arrow'></i></a>
+    </div>
+    <br />
+    <!--Fotos puntos-->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <span class="dot" onclick="currentSlide(11)"></span>
+    </div>
+
+    <!-- Formulario -->
+    <form action="/Luna" method="POST" class="container-sm text-center mt-3">
+      <div class="mb-3">
+        <input
+          type="text"
+          class="form-control bg-transparent text-white"
+          name="Texto"
+          placeholder="Texto de la Luna"
+          autofocus
+        />
+        <input
+          type="number"
+          class="form-control bg-transparent text-white d-none"
+          id="Num"
+          name="Num"
+          placeholder="Foto"
+          value=1
+        />
+        <input
+          type="text"
+          class="form-control bg-transparent text-white d-none"
+          id="Fecha"
+          name="Fecha"
+          placeholder="Foto"
+        />
+      </div>
+
+      <button type="submit" class="btn btn-outline-primary">
+        <i class="bx bxs-moon"></i> Crear Luna
+      </button>
+    </form>
+
+    <!-- Fichas -->
+    <div class="row">
+      <div
+      class="card text-white bg-dark col-md-auto mx-auto mt-5 borde"
+      style="width: 18rem"
+    >
+      <div class="card-body">
+        <h5 class="card-title text-center">
+          <i class="bx bxs-moon"></i> Ultimas Lunas 
+          <i class="bx bxs-moon"></i>
+        </h5>
+        <div class="text-center">
+
+          {% for x in datos %}
+          <p class="card-text m-2">
+          {{x[0]}}
+        </p>
+
+        {% endfor %}
+      
+        </div>
+
+        <h5 class="card-title text-center mt-2 pt-2 linea2">
+          <i class="bx bxs-moon"></i> Total de Lunas 
+          <i class="bx bxs-moon"></i>
+        </h5>
+        <p class="text-center"> {{total}}</p>
+      </div>
+    </div>
+      <div
+        class="card text-white bg-dark col-md-auto mx-auto mt-5 borde"
+        style="width: 18rem"
+        id="Software"
+      >
+        <img src="{{ url_for('static', filename='images/cards/PC.jpg') }}" class="card-img-top" alt="Software" />
+        <div class="card-body">
+          <h5 class="card-title">
+            <i class="bx bxl-windows"></i> You Make A Moon en PC
+          </h5>
+          <p class="card-text">
+            Descarga el programa para hacer lunas desde tu computadora sin
+            conexión a Internet
+          </p>
+          <div class="row">
+            <a href="https://github.com/HuchinDamian/ProyectMoonSoftware/releases" class="btn btn-outline-primary">Descargar</a>
+            <a href="https://github.com/HuchinDamian/ProyectMoonSoftware" class="btn btn-outline-secondary mt-3">Codigo Fuente</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card text-white bg-dark col-md-auto mx-auto mt-5 borde"
+        style="width: 18rem"
+      >
+        <img
+          src="{{ url_for('static', filename='images/cards/Discord.jpg') }}"
+          class="card-img-top"
+          alt="Discord"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            <i class="bx bxl-discord-alt"></i> Discord Bot
+          </h5>
+          <p class="card-text">
+            Crea lunas desde tu servidor de Discord con el Bot de You Make A
+            Moon
+          </p>
+          <div class="align-items-end">
+            <a href="#" class="btn btn-outline-secondary disabled row"
+              >Disponible en Navidad 2021</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card text-white bg-dark col-md-auto mx-auto mt-5 borde"
+        style="width: 18rem"
+      >
+        <img
+          src="{{ url_for('static', filename='images/cards/Android.jpg') }}"
+          class="card-img-top"
+          alt="Android"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            <i class="bx bxl-android"></i> Lunas en tu movil
+          </h5>
+          <p class="card-text">
+            Descarga el APK de You Make A Moon y comparte lunas con todo el
+            mundo desde tu telefono
+          </p>
+          <a href="#" class="btn btn-outline-secondary disabled row"
+            >Disponible en 2022</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!--Menu Abajo-->
+    <ul class="nav linea2 mt-5">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          aria-current="page"
+          target="_blank"
+          href="https://www.facebook.com/LaOdiseaDeLosMemes"
+          ><i class="bx bx-globe"></i> La Odisea De Los Memes</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          target="_blank"
+          href="https://github.com/HuchinDamian/YouMakeAMoonOnline"
+          ><i class="bx bxl-github"></i> GitHub</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="https://www.nintendo.com/" tabindex="-1" aria-disabled="true"
+          >Super Mario Odyssey is a trademark of Nintendo Co., Ltd.</a
+        >
+      </li>
+    </ul>
+
+    <!-- Boostrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Slider de Fotos -->
+    <script src={{url_for('static', filename = 'js/slider.js')}}></script>
+  </body>
+</html>
