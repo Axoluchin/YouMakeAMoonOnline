@@ -3,7 +3,7 @@ showSlides(slideIndex);
 document.getElementById("Fecha").value =
   new Date().getDate() +
   " / " +
-  new Date().getMonth() +
+  (new Date().getMonth() +1) +
   " / " +
   new Date().getFullYear();
 

@@ -1,5 +1,7 @@
+from sqlite3.dbapi2 import Error
 from flask import Flask, render_template, url_for, request
 from modulos.photo import cearfoto
+
 from modulos import db
 
 app = Flask(__name__)

@@ -2,6 +2,7 @@ from sqlite3.dbapi2 import Error
 from PIL import Image, ImageDraw, ImageFont
 import base64
 import io
+
 from modulos import db
 
 def cearfoto(texto,numero,fecha):
@@ -10,12 +11,10 @@ def cearfoto(texto,numero,fecha):
         imagen = Image.open(f'static/images/temples/{numero}.jpg')
         db.guarda_luna(texto,numero)
         
-        
-    except Error as e:
-        imagen = Image.open(f'static/images/temples/01000101 01101100 01101100 01101111 01110011 00100000 01110011 01100101 00100000 01100001 01110000 01110010 01101111 01111000 01101001 01101101 01100001 01101110.jpg')
+    except:
+        imagen = Image.open('static/images/Error.jpg')
         texto = ""
         fecha = ""
-        print(e)
         
     tamanio = 80
     w = 0
